@@ -35,7 +35,7 @@
 
 							<!-- 添加后台说明 -->
 							<h1>
-								<i class="icon-leaf green"></i> <span class="white">费用管理系统</span>
+								<i class="icon-leaf green"></i> <span class="white">教务管理系统</span>
 							</h1>
 							<h4 class="blue"></h4>
 						</div>
@@ -54,17 +54,10 @@
 
 										<form action="login.do" method="post" onsubmit="return check()">
 											<fieldset>
-												<label class="block clearfix"> 
-												<span class="block input-icon input-icon-right"> 
-												<input id="userId"
-														name="userAccount" type="text" class="form-control" placeholder="请输入账号" /> 
-												<i class="icon-user"></i>
+												<label class="block clearfix"> <span class="block input-icon input-icon-right"> <input id="userId"
+														name="userAccount" type="text" class="form-control" placeholder="请输入账号" /> <i class="icon-user"></i>
 												</span>
-												</label> 
-												
-												<label class="block clearfix"> 
-												<span class="block input-icon input-icon-right"> 
-												<input id="userPw"
+												</label> <label class="block clearfix"> <span class="block input-icon input-icon-right"> <input id="userPw"
 														name="userPassword" type="password" class="form-control" placeholder="请输入密码" /> <i class="icon-lock"></i>
 												</span>
 												</label>
