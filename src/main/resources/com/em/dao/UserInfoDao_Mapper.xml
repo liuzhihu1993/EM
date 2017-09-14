@@ -22,4 +22,15 @@
 		user_password=#{userPassword}
 		and user_mark='1'
 	</select>
+
+	<!--获取用户列表 -->
+	<select id="list" parameterType="UserInfo" resultMap="usermap">
+		select a.*,b.role_name from user_info a,role_info b where
+		a.user_mark=#{userMark} and a.role_id=b.role_id
+		<if test="userName!=null and userName!=''">
+			and a.user_name like #{userName}
+		</if>
+		order by a.user_id desc
+	</select>
+
 </mapper>

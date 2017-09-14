@@ -1,5 +1,7 @@
 package com.em.service;
 
+import java.util.List;
+
 import com.em.pojo.UserInfo;
 
 /**
@@ -17,5 +19,13 @@ public interface UserInfoService {
 	 * @return
 	 */
 	public UserInfo login(UserInfo info);
+
+	/**
+	 * 获取用户列表
+	 * 
+	 * @param info
+	 * @return
+	 */
+	public List<UserInfo> list(UserInfo info);
 
 }
