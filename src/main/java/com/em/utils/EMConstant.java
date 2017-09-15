@@ -23,6 +23,12 @@ public class EMConstant {
 	 */
 	public static final int PHONE_NUM_LENGTH = 11;
 
+	// 角色标识为可用
+	public final static String ROLE_MARK_YES = "1";
+
+	// 角色标识为不可用
+	public final static String ROLE_MARK_NO = "0";
+
 	/**
 	 * 常量1
 	 */

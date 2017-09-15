@@ -33,4 +33,21 @@
 		order by a.user_id desc
 	</select>
 
+
+	<!-- 根据添加查询用户信息 -->
+	<select id="getUserById" parameterType="UserInfo" resultMap="usermap">
+		select a.*,b.role_name from user_info a,role_info b where a.role_id =
+		b.role_id
+
+		<if test="userId!=null and userId!=''">
+			and a.user_id = #{userId}
+		</if>
+	</select>
+
+	<delete id="deleteUserById" parameterType="UserInfo">
+		update user_info u set
+		u.user_mark='2' where u.user_id=#{userId}
+	</delete>
+
+
 </mapper>

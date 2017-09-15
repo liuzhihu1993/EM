@@ -36,4 +36,19 @@ public class UserInfoServiceImpl implements UserInfoService {
 		return userInfoDao.list(info);
 	}
 
+	/***
+	 * 通过用户id获取用户
+	 */
+	public UserInfo getUserById(UserInfo info) {
+
+		return userInfoDao.getUserById(info);
+	}
+
+	/**
+	 * 通过id 删除用户
+	 */
+	public void deleteUserById(UserInfo info) {
+		userInfoDao.deleteUserById(info);
+	}
+
 }

@@ -28,4 +28,19 @@ public interface UserInfoService {
 	 */
 	public List<UserInfo> list(UserInfo info);
 
+	/**
+	 * 通过id获取用户
+	 * 
+	 * @param info
+	 * @return
+	 */
+	public UserInfo getUserById(UserInfo info);
+
+	/**
+	 * 根据Id 删除单条用户
+	 * 
+	 * @param info
+	 */
+	public void deleteUserById(UserInfo info);
+
 }

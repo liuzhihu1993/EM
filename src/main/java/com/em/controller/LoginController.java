@@ -51,13 +51,19 @@ public class LoginController {
 
 				@SuppressWarnings("rawtypes")
 				List<Map> list = anthorityService.getMenuList(userinfo.getRoleId());
+
+				logger.debug("get the user menulist is [{}]", list.toString());
+
 				session.setAttribute("menulist", list);
+
+				logger.debug("end user login [{}]", user.toString());
 				return "main/index";
 			}
 
 		} catch (Exception e) {
 
 			logger.debug("login occure  the exception is  [{}]", e.getMessage());
+
 			return "redirect:login.jsp";
 		}
 
